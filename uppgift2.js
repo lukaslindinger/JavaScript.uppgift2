@@ -5,6 +5,7 @@ function validateFullName() {
         alert("Name most contain more than one letter");
         return false;
     }
+    return true;
 }
 
 function validateEmail() {}
