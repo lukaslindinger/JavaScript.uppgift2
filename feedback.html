@@ -28,19 +28,26 @@
                     <label for="namn">Full name:</label>
                     <input type="text" id="namn" name="namn" required placeholder="Ditt namn..">
 
-                    <label for="email">E-post:</label>
+                    <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required placeholder="namn@mail.com">
 
-                    <label for="topicofinterest">Topic of interest</label>
-                    <input type="select" id="topicofinterest" name="topicofinterest" required placeholder="Klicka i det som stämmer">
-                    
-                    <label for="comments">Comments:</label>
-                    <input type="textarea" id="comments" name="comments">
+                    <label for="topicofinterest">Choose a topic of interest</label>
 
-                    <label for="website">Website</label>
+                    <select name="topicofinterest" required  id="topicofinterest">
+                        <option value="annanannledning">Annan annledning</option>
+                        <option value="kontakt">Komma i kontakt med mig</option>
+                        <option value="felpåsida">Bugg på sidan</option>
+                        <option value="sammarbete">Sammarbeta med mig</option>
+                    </select>
+
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments" required></textarea>
+
+                    <label for="website">Website (URL)</label>
                     <input type="url" id="website" name="website">
 
-                    <button type="submit">Skicka</button>
+                    <button type="submit" value="Submit">Skicka</button>
+                    <button type="reset" value="Reset">Clear</button>
                 </form>
             </div>
         </section>

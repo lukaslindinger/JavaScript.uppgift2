@@ -215,7 +215,7 @@ th, td {
     padding-top:40px;
 }
 
-input, textarea{
+input, textarea, select, option{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
