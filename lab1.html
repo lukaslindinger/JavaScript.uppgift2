@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+    <html lang="sv">
+
+    <head>
+        <link rel="stylesheet" href="lab1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Min portfolio</title>
+    </head>
+
+
+    <body>
+        <header>
+            <div class="row">
+                <h5>Useful Beauty</h5>
+                <nav>
+                    <a class="nav-lank" href="#arbeten">Tidigare arbeten</a>
+                    <a class="nav-lank" href="#om-mig">Om mig</a>
+                    <a class="nav-lank" href="#kontakt">Kontakta mig</a>
+                    <a class="nav-lank" href="https://umu.se/">Umeå universitet</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="intro">
+                <img class="bild1" src="bilder/bild1.jfif" alt="Jag ute i skogen">
+                <div>
+                    <h1>Lukas Lindinger</h1>
+                    <h4>Kandidatexamen kognitionsvetenskap</h4>
+                    <p>Jag heter Lukas och är 27 år och läser mitt sista år på Kognitionsvetenskapsprogrammet på Umeå universitet. En vanlig fråga jag får är vad Kognitionsvetenskap faktiskt är och det är en tvärvetenskaplig linje. Man studerar bland annat mänskligt tänkande, minne, perception och även andra mentala processer. I min utbildning fokuserar man på och undersöker hur hjärnan och våra sinnen tar emot, bearbetar men även lagar information. En stor del av utbildning går undersöker även hur vi människor kommunicerar och interaktionen mellan människa och teknik faktiskt fungerar. </p>
+                    <p>Utbildningen är uppdelad i fem olika huvudområden som består av:</p>
+                    <ul>
+                        <li>Filosofi</li>
+                        <li>Psykologi</li>
+                        <li>Datavetenskap</li>
+                        <li>Neurovetenskap</li>
+                        <li>Lingvistik</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="arbeten">
+                <h2>Tidigare arbeten</h2>
+                <table>
+                    <tr>
+                        <th>Arbetsplats</th>
+                        <th>Roll</th>
+                        <th>Anställningstid</th>
+                    </tr>
+                    <tr>
+                        <td>VK Media</td>
+                        <td>Teknisk support</td>
+                        <td>2021-2024</td>
+                    </tr>
+                    <tr>
+                        <td>Bahnhof</td>
+                        <td>Säljare</td>
+                        <td>2020-2021</td>
+                    </tr>
+                    <tr>
+                        <td>Mellanstadiet Ulricehamn</td>
+                        <td>Elevassistent</td>
+                        <td>2019-2020</td>
+                    </tr>
+                </table>
+
+                <div class="main-container">
+                    <div>
+                        <img class="bild2" src="bilder/bild2.jfif" alt="vattenfall i Lombok">
+                        <p>Vattenfall i Lombok</p>
+                    </div>
+                    <div>
+                        <img class="bild2" src="bilder/bild3.jfif" alt="orn som flyger i solnedgång">
+                        <p>Örn som flyger</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="om-mig">
+                <h2>Om mig</h2>
+                    <h3>Björklöven tillbaka till allsvenskan</h3>
+                        <p>Ett tydligt minne jag har från min barndom är när jag satt i Skycom arena som nu heter Visionite arena och fick se när Björklöven tog sig tillbaka till Allsvenskan efter att ha gått i konkurs. Nu även i vuxenålder har jag fått se ännu ett avancemang från Björklöven men nu har det tagit klivet till SHL. </p>
+
+                <div class="main-container">
+                    <div>
+                        <h3>Akademiska intressen</h3>
+                        <p> Mina största akademiska intressen är bland annat psykologi för att förstå hur och varför vi som människor gör och tar vissa beslut som vi gör. Psyokoligi är ett bra verktyg för att få djupare förstålese för just detta. 
+                            Detta tillsammans med datavetenskap ger mig en bra inblick på hur man ska kunna utforma och tänka när man implemtererar tekniska saker för att det ska vara logiskt och lättanvänt.  
+                        </p>
+                        </div>  
+                    <div>
+                        <h3>Framtida mål</h3>
+                        <p>Mina akademiska mål med min utbildning är dels att lära mig grunderna när det kommer till programering i flera olika språk.  </p>
+                        <p>Detta är viktigt för mig för att kunna bli en sån komplett arbetare som möjligt med bred kunskap inom flera olika områden. </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="kontakt">
+                <h2>Kontakta mig</h2>
+                <div class="mail-section">
+                    <form action="mailto:lukas.lindinger@hotmail.com" method="post" enctype="text/plain">
+                        <label for="namn">Namn:</label>
+                        <input type="text" id="namn" name="namn" required placeholder="Ditt namn..">
+
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" required placeholder="namn@mail.com">
+
+                        <label for="meddelande">Meddelande:</label>
+                        <textarea id="meddelande" name="meddelande" rows="6" required placeholder="Skriv ditt meddelande här..."></textarea>
+
+                        <button type="submit">Skicka</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <p>Adress: Skeppargatan 20</p>
+                <p>Tel: 070-6713519</p>
+                <p>Mail: lukas.lindinger@hotmail.com</p>
+                <p>Copyright Lukas Lindinger 2026</p>
+                <p>Privacy Policy</p>
+                <p>For terms of use - Email lukas.lindinger@hotmail.com</p>
+            </div>
+        </footer>
+    </body>
+</html>
