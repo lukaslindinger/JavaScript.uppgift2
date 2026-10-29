@@ -24,7 +24,7 @@
         <section id="feedback">
             <h2>Feedback om min portfolio</h2>
             <div class="mail-section">
-                <form action="mailto:lukas.lindinger@hotmail.com" method="post" enctype="text/plain">
+                <form action="mailto:lukas.lindinger@hotmail.com" method="post" enctype="text/plain" name="feedback" onsubmit="return validateFullName()">
                     <label for="namn">Full name:</label>
                     <input type="text" id="namn" name="namn" required placeholder="Ditt namn..">
 
@@ -51,5 +51,6 @@
                 </form>
             </div>
         </section>
+        <script src="uppgift2.js"></script>
     </body>
 </html>
