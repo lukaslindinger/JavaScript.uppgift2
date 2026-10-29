@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+    <html lang="sv">
+    <head>
+        <link rel="stylesheet" href="lab1.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Min portfolio</title>
+    </head> 
+
+   <body>
+        <header>
+            <div class="row">
+                <h5>Min Portfolio</h5>
+                <nav>
+                    <a class="nav-lank" href="lab1.html">Startsida</a>
+                    <a class="nav-lank" href="lab1.html">Tidigare arbeten</a>
+                    <a class="nav-lank" href="lab1.html">Om mig</a>
+                    <a class="nav-lank" href="feedback.html">Feedback</a>
+                </nav>
+            </div>
+        </header>
+    
+ 
+        <section id="feedback">
+            <h2>Feedback om min portfolio</h2>
+            <div class="mail-section">
+                <form action="mailto:lukas.lindinger@hotmail.com" method="post" enctype="text/plain">
+                    <label for="namn">Full name:</label>
+                    <input type="text" id="namn" name="namn" required placeholder="Ditt namn..">
+
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required placeholder="namn@mail.com">
+
+                    <label for="topicofinterest">Topic of interest</label>
+                    <input type="select" id="topicofinterest" name="topicofinterest" required placeholder="Klicka i det som stämmer">
+                    
+                    <label for="comments">Comments:</label>
+                    <input type="textarea" id="comments" name="comments">
+
+                    <label for="website">Website</label>
+                    <input type="url" id="website" name="website">
+
+                    <button type="submit">Skicka</button>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
