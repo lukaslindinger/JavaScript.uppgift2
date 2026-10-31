@@ -275,20 +275,14 @@ input, select, textarea {
 }
 
 input:focus, select:focus, textarea:focus {
-    outline: 3px solid #78957C;
-    border-color: #78957C;
-}
-
-input.error, select.error, textarea.error {
-    border: 2px solid red;
+    border:2px solid #78957C;
 }
 
 input.valid, select.valid, textarea.valid {
     border: 2px solid green;
-
 }
 
-.error-message {
+.error{
     color: red;
     font-size: 14px;
     margin-top: 5px;
