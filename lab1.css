@@ -262,7 +262,8 @@ textarea {
   resize: none;
 }
 .counter {
-  margin-top: 10px;
+  margin-top: -10px;
+  margin-bottom:10px;
   font-size: 0.9em;
   color: #555;
 }
@@ -278,13 +279,15 @@ input:focus, select:focus, textarea:focus {
     border:2px solid #78957C;
 }
 
-input.valid, select.valid, textarea.valid {
-    border: 2px solid green;
-}
-
 .error{
     color: red;
     font-size: 14px;
+    margin-top: -30px;
+    margin-bottom:10px;
+}
+.status{
+    color: green;
+    font-size: 20px;
     margin-top: 5px;
 }
 
