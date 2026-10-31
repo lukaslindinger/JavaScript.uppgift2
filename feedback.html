@@ -26,17 +26,17 @@
             <div class="mail-section">
                 <form action="mailto:lukas.lindinger@hotmail.com" method="post" enctype="text/plain" name="feedback" id="feedback">
                     <label for="namn">Full name:</label>
-                    <input type="text" id="namn" name="namn" placeholder="Ditt namn..">
+                    <input type="text" id="namn" name="namn" placeholder="Ditt namn.." class="box">
                     <p id="namn-error" class="error"></p>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="namn@mail.com">
+                    <input id="email" name="email" placeholder="namn@mail.com" class="box">
                     <p id="email-error" class="error"></p>
 
 
                     <label for="topicofinterest">Choose a topic of interest</label>
 
-                    <select name="topicofinterest" id="topicofinterest">
+                    <select name="topicofinterest" id="topicofinterest" class="box">
                         <option value="" disabled selected>Annledning för kontakt</option>
                         <option value="annanannledning">Annan annledning</option>
                         <option value="kontakt">Komma i kontakt med mig</option>
@@ -46,14 +46,14 @@
                     <p id="topicofinterest-error" class="error"></p>
 
                     <label for="comments">Comments:</label>
-                    <textarea id="comments" name="comments" placeholder="Type something..."></textarea>
+                    <textarea id="comments" name="comments" placeholder="Type something..." class="box"></textarea>
                     <div class="counter"> Characters:  <span id="count">0</span></div>
                     <p id="comments-error" class="error"></p>
 
-                    <label for="website">Website (URL)</label>
+                    <label for="website" >Website (URL)</label>
                     <input type="url" id="website" name="website">
 
-                    <button type="submit" value="Submit">Skicka</button>
+                    <button type="submit" value="Submit" class="box">Skicka</button>
                     <button type="reset" value="Reset">Clear</button>
                 </form>
             </div>

@@ -32,6 +32,7 @@ function validateComments() {
     showFieldError("comments", "Comment must be longer than 15 characters");
     return false;
   }
+  clearFieldError("comments");
   return true;
 }
 
@@ -47,6 +48,7 @@ function validateFullName() {
         showFieldError("namn", "Name most contain more than one letter");
         return false;
     }
+    clearFieldError("namn");
     return true;
 }
 
@@ -64,7 +66,6 @@ function validateEmail() {
     return false;
   }
   if (!firstDomain || !firstDomain.includes(".")) {
-    alert("Email must include a domain");
     showFieldError("email", "Email must include a domain");
     return false;
   }
@@ -72,29 +73,36 @@ function validateEmail() {
   const secondDomain = firstDomain.split(".")[1];
 
   if (!secondDomain || secondDomain.length < 1) {
-    alert("Email must.se, .com osv");
     showFieldError("email", "Email must contain .se, .com");
     return false;
   }
+  clearFieldError("email");
   return true;
 }
 
 function validateTopic(){
   const topic = document.forms["feedback"]["topicofinterest"].value;
   if(!topic){
-      showFieldError("topicofinterest", "It is required to select a topic");
-      return false;
-    }
+    showFieldError("topicofinterest", "It is required to select a topic");
+    return false;
+  }
+  clearFieldError("topicofinterest");
+  return true;  
 }
 
 function showFieldError(id, error){
-  document.getElementById(id).style.border="1px solid red";
+  document.getElementById(id).style.border="2px solid red";
   document.getElementById(id + "-error").innerText=error;
 }
 
-function clearFieldError(){}
+function clearFieldError(id){
+  document.getElementById(id).style.border="2px solid #ccc";
+  document.getElementById(id + "-error").innerText="";
+}
 
 function resetForm(){
   form.reset();
   count.innerText=0;
+  document.getElementByClass("box").style.border="2px solid #ccc";
+  document.getElementByClass("error").innerText="";
 }
