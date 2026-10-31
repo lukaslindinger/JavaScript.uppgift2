@@ -1,3 +1,19 @@
+const comments=document.getElementById("comments");
+const count=document.getElementById("count");
+
+comments.addEventListener("input",()=>{
+  count.innerText=comments.value.length;
+});
+
+
+function validateComments() {
+
+  if(Number(count.innerText)<=15){
+    alert("Comment must be longer than 15 characters");
+    return false;
+  }
+  return true;
+}
 
 function validateFullName() {
     const name = document.forms["feedback"]["namn"].value;
@@ -11,8 +27,6 @@ function validateFullName() {
 function validateEmail() {}
 
 function validateTopic(){}
-
-function validateComments(){}
 
 function showFieldError(){}
 
