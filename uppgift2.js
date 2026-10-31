@@ -18,6 +18,11 @@ form.addEventListener('submit', function(event) {
 
 function validateComments() {
 
+  if(!comments){
+    alert("Comments is required")
+    return false;
+  }
+
   if(Number(count.innerText)<=15){
     alert("Comment must be longer than 15 characters");
     return false;
@@ -27,6 +32,12 @@ function validateComments() {
 
 function validateFullName() {
     const name = document.forms["feedback"]["namn"].value;
+
+    if(!name){
+      alert("Name is required")
+      return false;
+    }
+      
     if (name.length<2) {
         alert("Name most contain more than one letter");
         return false;
@@ -34,9 +45,21 @@ function validateFullName() {
     return true;
 }
 
-function validateEmail(){}
+function validateEmail(){
+  const email = document.forms["feedback"]["email"].value;
+  if(!email){
+      alert("Email is required")
+      return false;
+    }
+}
 
-function validateTopic(){}
+function validateTopic(){
+  const topic = document.forms["feedback"]["topicofinteres"].value;
+  if(!topic){
+      alert("It is required to select a topic")
+      return false;
+    }
+}
 
 function showFieldError(){}
 
