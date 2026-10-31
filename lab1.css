@@ -285,7 +285,7 @@ input:focus, select:focus, textarea:focus {
     margin-top: -30px;
     margin-bottom:10px;
 }
-.status{
+#status{
     color: green;
     font-size: 20px;
     margin-top: 5px;
