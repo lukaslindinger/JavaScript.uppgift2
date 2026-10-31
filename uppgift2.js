@@ -45,12 +45,31 @@ function validateFullName() {
     return true;
 }
 
-function validateEmail(){
+function validateEmail() {
   const email = document.forms["feedback"]["email"].value;
+  const firstDomain = email.split("@")[1];
+
   if(!email){
-      alert("Email is required")
-      return false;
-    }
+    alert("This field is required");
+    return false;
+  }
+
+  if (!email.includes("@")) {
+    alert("Email must contain @");
+    return false;
+  }
+  if (!firstDomain || !firstDomain.includes(".")) {
+    alert("Email must include a domain");
+    return false;
+  }
+
+  const secondDomain = firstDomain.split(".")[1];
+
+  if (!secondDomain || secondDomain.length < 1) {
+    alert("Email must.se, .com osv");
+    return false;
+  }
+  return true;
 }
 
 function validateTopic(){
