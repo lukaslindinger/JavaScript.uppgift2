@@ -5,6 +5,16 @@ comments.addEventListener("input",()=>{
   count.innerText=comments.value.length;
 });
 
+const form = document.getElementById('feedback');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  if (validateComments() && validateFullName() && validateEmail() && validateTopic()) {
+    alert("Form accepted!");
+    resetForm();
+  }
+});
 
 function validateComments() {
 
@@ -24,7 +34,7 @@ function validateFullName() {
     return true;
 }
 
-function validateEmail() {}
+function validateEmail(){}
 
 function validateTopic(){}
 
@@ -32,4 +42,7 @@ function showFieldError(){}
 
 function clearFieldError(){}
 
-function resetForm(){}
+function resetForm(){
+  form.reset();
+  count.innerText=0;
+}

@@ -267,6 +267,32 @@ textarea {
   color: #555;
 }
 
+input, select, textarea {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease, outline 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 3px solid #78957C;
+    border-color: #78957C;
+}
+
+input.error, select.error, textarea.error {
+    border: 2px solid red;
+}
+
+input.valid, select.valid, textarea.valid {
+    border: 2px solid green;
+
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
 
 
 

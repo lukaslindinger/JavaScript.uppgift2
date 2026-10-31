@@ -21,12 +21,13 @@
         </header>
     
  
-        <section id="feedback">
+        <section id="feedback-form">
             <h2>Feedback om min portfolio</h2>
             <div class="mail-section">
-                <form action="mailto:lukas.lindinger@hotmail.com" method="post" enctype="text/plain" name="feedback" onsubmit="return validateComments()">
+                <form action="mailto:lukas.lindinger@hotmail.com" method="post" enctype="text/plain" name="feedback">
                     <label for="namn">Full name:</label>
                     <input type="text" id="namn" name="namn" required placeholder="Ditt namn..">
+                    <span id="nameError" class="error-message"></span>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required placeholder="namn@mail.com">
@@ -43,6 +44,7 @@
 
                     <label for="comments">Comments:</label>
                     <textarea id="comments" name="comments" placeholder="Type something..." required></textarea>
+                    <span id="commentsError" class="error-message"></span>
                     <div class="counter"> Characters:  <span id="count">0</span></div>
 
                     <label for="website">Website (URL)</label>
